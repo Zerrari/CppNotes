@@ -8,16 +8,16 @@ using std::vector;
 
 int main()
 {
-  vector<int> ivec;
-  int cnt = 10;
-  while (cnt > 0)
+    vector<int> ivec;
+    int cnt = 10;
+    while (cnt > 0)
     {
-      ivec.push_back(cnt--);
+	ivec.push_back(cnt--);
     }
-  vector<int>::iterator iter = ivec.begin();
-  while (iter != ivec.end())
+    vector<int>::iterator iter = ivec.begin();
+    while (iter != ivec.end())
     {
-      cout << *iter++ << '\n';
+	cout << *iter++ << '\n';
     }
-  return 0;
+    return 0;
 }
