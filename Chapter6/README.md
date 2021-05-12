@@ -122,6 +122,7 @@ cerr << "error" << endl
 #endif
 ```
 
+要现在头文件前定义NDEBUG
 如果NDEBUG未定义，则会执行expr,如果结果为false，则终止程序的运行。
 `assert(expr)`
 
