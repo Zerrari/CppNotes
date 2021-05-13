@@ -119,6 +119,8 @@ int count(int x,int y);
 int count(int z);
 ```
 
+## 指向函数的指针
+
 
 
 
