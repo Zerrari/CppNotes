@@ -91,7 +91,7 @@ infile.close();
 infile.open("file2");
 ```
 
-如果需要重用文件流读取多个文件，必须在读另一个文件前调用clear清楚该流的状态。
+如果需要重用文件流读取多个文件，必须在读另一个文件前调用clear清除该流的状态。
 
 ### 文件模式
 
@@ -128,6 +128,5 @@ in只能用于ifstream和fstream
 将string类型的s复制给strm
 `strm.str(s);`
 
-### stringstream对象的使用
 
 
