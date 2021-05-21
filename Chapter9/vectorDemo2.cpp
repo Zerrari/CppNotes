@@ -9,7 +9,9 @@ int main()
     vector<int>::iterator iter;
     iter = ivec.begin();
     ivec.push_back(0);
+    iter = ivec.begin();
     ivec.insert(iter,3);
+    iter = ivec.begin();
     while (iter != ivec.end())
     {
 	cout << *iter << '\n';

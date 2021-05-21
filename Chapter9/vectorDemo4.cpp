@@ -17,5 +17,10 @@ int main()
     cout << ivec.back() << endl;
     cout << ivec[1] << endl;
     cout << ivec.at(2) << endl;
+    iter = ivec.begin();
+    iter = ivec.erase(iter);
+    cout << *iter << endl;
+    ivec.clear();
+    cout << ivec.empty() << endl;
     return 0;
 }

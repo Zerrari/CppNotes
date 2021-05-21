@@ -18,5 +18,12 @@ int main()
 	cout << *iter << endl;
 	iter++;
     }
+    ivec.resize(5,1);
+    iter = ivec.begin();
+    while (iter != ivec.end())
+    {
+	cout << *iter << endl;
+	iter++;
+    }
     return 0;
 }
