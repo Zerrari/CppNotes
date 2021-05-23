@@ -78,4 +78,55 @@ unique(iter1,iter2);
 
 ## 迭代器
 
++ 插入迭代器
++ iostream迭代器
++ reverse_iterator
+
+### 插入迭代器
+
++ back_inserter 创建使用push\_back实现插入的迭代器
++ front_inserter 使用push\_front实现插入
+需要容器支持push\_front操作
++ inserter 带有第二实参，指向插入位置的迭代器
+
+### iostream迭代器
+
++ istream_iterator 读取输入流
++ ostream_iterator 写输入流
+
+```
+创建从输入流strm读取T类型对象的迭代器
+istream_iterator<T> in(strm);
+
+istream_iterator的超出末端迭代器
+istream_iterator<T> in;
+
+ostream_iterator<T> out(strm);
+
+ostream_iterator<T> out(strm,delim);
+```
+
+### 反向迭代器
+
+从最后一个元素向前遍历到第一个元素，++运算访问前一个元素，--运算访问后一个元素。
+
+### 五种迭代器
+
++ Input iterator 读，不能写，只支持自增运算
++ Output iterator 写，不能读，只支持自增运算
++ Forward iterator 读和写，只支持自增运算
++ Bidirectional iterator 读和写，支持自增和自减运算
++ Random access iterator 读和写，支持完整的迭代器算术运算
+
+## 泛型算法
+
+大多数算法采用下面四种形式之一
+```
+alg(beg,end,other parms);
+alg(beg,end,dest,other parms);
+alg(beg,end,beg2,other parms);
+alg(beg,end,beg2,end2,other parms);
+```
+
+
 
