@@ -105,8 +105,38 @@ person(string name):
 
 ### 默认构造函数
 
+只有没有定义构造函数时，编译器才会自动生成一个默认的构造函数。
+
 使用默认构造函数来创建对象
 ```
 Person student;
 Person student = Person();
 ```
+
+### 友元
+
+允许特定的非成员函数访问其私有成员
+
+```
+class person{
+	friend class student;
+};
+```
+student类的所有成员函数可以访问person类中的私有成员
+
+```
+class person{
+	friend int student::get_age();
+};
+```
+student类的get_age可以访问person类中的私有成员
+
+### static类成员
+
+每个static成员是与类相关的，而不是与类的对象相关
+
+static成员函数可以直接访问static成员，但不能使用非static成员
+
+static数据成员必须在类外定义
+
+static的const型成员可以在类中初始化
