@@ -27,7 +27,7 @@
 double function(void) const;
 ```
 const成员不能改变它所访问对象的成员。
-const声明必须出现在声明和定义中。
+const声明必须同时出现在声明和定义中。
 
 ### 数据抽象和封装
 
