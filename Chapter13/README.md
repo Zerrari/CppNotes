@@ -92,5 +92,20 @@ public:
 
 通过计数器来跟踪有多少个对象共享一个指针，当计数为0时，销毁对象。
 
+定义一个智能指针类
+``` c++
+class u_ptr{
+	friend class Hasptr
+	int *ptr;
+	int use;
+	u_ptr(int *p): ptr(p),use(1){}
+	~u_ptr(){delete ptr;}
+};
 
+```
 
+#### 定义值类型
+
+复制值型对象时，会得到一个新的副本。
+
+通过复制一个成员是，必须复制指针所指向的对象。
